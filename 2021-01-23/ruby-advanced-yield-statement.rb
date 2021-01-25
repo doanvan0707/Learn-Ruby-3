@@ -1,0 +1,8 @@
+# Ruby advanced yield statement
+
+def test
+	yield 5
+	puts "You are in method test"
+	yield 100
+end	
+test {|i| puts "You are in the block #{i}" }

@@ -1,0 +1,17 @@
+# Ruby String unpack directives
+
+puts ("abc \0\0abc \0\0".unpack('A6Z6'))
+puts ("-----------------------------")
+puts ("abc \0\0".unpack('a3a3'))
+puts ("-----------------------------")
+puts ("abc \0abc \0".unpack('Z*Z*'))
+puts ("-----------------------------")
+puts ("aa".unpack('b8B8'))
+puts ("-----------------------------")
+puts ("aaa".unpack('h2H2c'))
+puts ("-----------------------------")
+puts ("\xfe\xff\xfe\xff".unpack('sS'))
+puts ("-----------------------------")
+puts ("now = 20is".unpack('M*'))
+puts ("-----------------------------")
+puts ("whole".unpack('xax2aX2aX1aX2a'))
